@@ -1,0 +1,38 @@
+
+
+.columns {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.column {
+	width: 50%;
+	padding: 0 2em;
+	float: left;
+}
+
+/* Demo links */
+.codrops-demos {
+	text-align: right;
+}
+
+.codrops-demos a {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 15px;
+	padding: 0 0 5px;
+	display: inline-block;
+	border-bottom: 3px solid rgba(0,0,0,0.25);
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus,
+.codrops-demos a.current-demo {
+	color: #fff;
+	border-color: #fff;
+}
+
+#page-2 {
+	/* background: #6cc88a; */
+}

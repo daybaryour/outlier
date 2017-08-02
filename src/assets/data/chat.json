@@ -1,0 +1,124 @@
+{
+	"start_message": {"question":[
+		"Hi. I'm otty <i class='em em-smiley'></i>. i'll be helping you get started"
+	], "answer": {
+		"type":"button",
+		"text":["Get Started"],
+        "next":["sign_prompt"],
+        "to_save":false
+	}},
+	"sign_prompt": {"question":[
+		"If this is your first time here, please click the 'Sign Up' button so I can get to know you better. If not, click the 'Sign In' button"
+	], "answer": {
+		"type":"button",
+		"text":["Sign up", "Sign In"],
+		"next":["firstname_path", "signin_path"],
+		"to_save":false
+    }},
+    "firstname_path": {"question":[
+        "Hey! Really great to have you here.",
+        "I'll ask you a couple of questions, just so I can get to know you better. Please, feel comfortable.",
+        "Can I know your first name?"
+	], "answer": {
+		"type":"text",
+		"text":["Enter First Name"],
+		"next":["lastname_path"],
+		"to_save":"firstname"
+    }},
+    "lastname_path": {"question":[
+        "And your last name?"
+	], "answer": {
+		"type":"text",
+		"text":["Enter Last Name"],
+		"next":["email_path"],
+		"to_save":"lastname"
+    }},
+    "email_path": {"question":[
+        "That's a nice name, i'll remember that",
+		"So <lastname></lastname>. Can you tell me your email address?"
+	], "answer": {
+		"type":"text",
+		"text":["Enter Email Address"],
+		"next":["password_path"],
+		"to_save":"email"
+	}},
+	"password_path": {"question":[
+        "Finally, i'll need some secret key. Something between you and i, i think it's usually referred to as password",
+        "Please enter your password..."
+	], "answer": {
+		"type":"password",
+		"text":["Enter your password"],
+		"next":["welcome_message"],
+		"to_save":"password"
+    }},
+    "welcome_message": {"question":[
+        "Good to meet you <firstname></firstname> <lastname></lastname>",
+        "i'm here to help you achieve your dreams by providing you leverage and helping you gain access to funds which can asssist you",
+        "In order to do this, permit me to ask a few more questions"
+	], "answer": {
+		"type":"button",
+		"text":["That's fine let's go"],
+		"next":["personality_question_1"],
+		"to_save":false
+    }},
+    "personality_question_1": {"question":[
+        "If you had to talk to the President in not less than 70 words, what would you say?"
+	], "answer": {
+		"type":"text",
+		"text":["That's fine let's go"],
+		"next":["personality_question_2"],
+		"to_save":"pq_1"
+    }},
+    "personality_question_2": {"question":[
+        "If you had an extra N400,000 to spend on yourself every week, what would you do?"
+	], "answer": {
+		"type":"text",
+		"text":["That's fine let's go"],
+		"next":["personality_question_3"],
+		"to_save":"pq_2"
+    }},
+    "personality_question_3": {"question":[
+        "What are your thoughts about inter-ethnic dating?"
+	], "answer": {
+		"type":"button",
+		"text":[
+            "I’ll marry whomever I want. I don’t care if you’re Igbo, Yoruba or Hausa. I love you, and that’s all that matters. The criticism on inter-ethnic marriage is just plain old school stuff.",
+            "I can marry someone from another tribe, but not without carefully considering the complications that come with difference in cultural backgrounds.",
+            "You should not marry someone from another ethnic group or tribe, considering the fact that your culture has a lot to do with your perception of what life is/should be like. If you’re from different cultures, you’re incompatible."
+        ],
+		"next":["personality_question_4", "personality_question_4", "personality_question_4"],
+		"to_save":"pq_3"
+    }},
+    "personality_question_4": {"question":[
+        "If you woke up and had 2,000 unread WhatsApp messages and could only answer 300 of them, how would you choose which ones to answer?"
+	], "answer": {
+		"type":"text",
+		"text":["That's fine let's go"],
+		"next":["personality_question_5"],
+		"to_save":"pq_4"
+    }},
+    "personality_question_5": {"question":[
+        "What would it be like to be shut off the internet for one year?"
+	], "answer": {
+		"type":"button",
+		"text":[
+                "Shut off the internet? Just shoot me, please! I can’t even imagine there was life without the internet. Actually, there’d be no life without the internet. No social life, just a ruined existence!",
+                "Well, it would be very tough, but life would just continue. I know It might take some months to adjust to this new reality, but I’ll definitely get over it. Life, for sure, would be quite boring, and less productive.",
+                "There’s really no problem with not having access to the internet. I’ve tried it many times (although not for as long as a year) and I didn’t feel like I was missing anything."
+            ],
+		"next":["personality_done","personality_done","personality_done"],
+		"to_save":"pq_5"
+    }},
+    "personality_done": {"question":[
+        "Alrighty then. That will be all for now",
+        "Would you like me to take you to login page"
+	], "answer": {
+		"type":"button",
+		"text":[
+            "Take me to login"
+        ],
+		"next":["personality_done"],
+		"to_save":false
+	}}
+}
+	
