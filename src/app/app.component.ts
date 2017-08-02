@@ -111,7 +111,7 @@ export class AppComponent implements OnInit{
 			case 'button':
 				this.ButtonVariables = true;
 				this.answerParams = answers;
-
+			
 			break;
 
 			case 'text':
@@ -124,6 +124,9 @@ export class AppComponent implements OnInit{
 	}
 
 	sendConversationMessage(message, next_message = false) {
+		if(String(next_message) == 'move_to_login') {
+			window.location.href = "/page3.html";
+		}
 		if(message != "") {
 			to_save = false;
 			if(next_message == false) {
@@ -139,8 +142,6 @@ export class AppComponent implements OnInit{
 				if(is_to_save != false) {
 					to_save  = this.parsed_convo[convo_length - 1].params;
 				}
-				//check if that id is to be saved, if yes save it
-				//var is_to_save = this.chat_flow_convo[]
 			}
 
 			//save neccesary params as required

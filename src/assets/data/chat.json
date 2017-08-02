@@ -117,7 +117,7 @@
 		"text":[
             "Take me to login"
         ],
-		"next":["personality_done"],
+		"next":["move_to_login"],
 		"to_save":false
 	}}
 }
