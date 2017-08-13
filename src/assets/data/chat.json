@@ -111,13 +111,13 @@
     }},
     "personality_done": {"question":[
         "Alrighty then. That will be all for now",
-        "Would you like me to take you to login page"
+        "Enter your twitter handle to get your personality"
 	], "answer": {
 		"type":"button",
 		"text":[
-            "Take me to login"
+            "Enter twitter handle here"
         ],
-		"next":["move_to_login"],
+		"next":["enter_twitter_handle"],
 		"to_save":false
 	}}
 }
